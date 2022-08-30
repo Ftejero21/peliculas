@@ -1,0 +1,514 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+}
+
+header{
+  width: 100%;
+  height: 150px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.titulo {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+  padding-left: 25px;
+}
+
+.titulo .logo h1{
+  color: white;
+  text-transform: uppercase;
+  font-size: 45px;
+}
+
+.titulo .logo h1 span{
+  color: red;
+}
+
+
+
+.titulo .enlaces button{
+  background-color: transparent;
+  color: white;
+  
+  padding: 10px 15px;
+  font-size: 25px;
+  margin: 25px;
+  cursor: pointer;
+}
+
+.buscador {
+  padding-right: 25px;
+}
+
+.buscador input{
+  padding: 15px 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+main{
+  
+  width: 100%;
+  height: auto;
+  
+  display: flex;
+  justify-content:center;
+  align-items: flex-start;
+  background-image: url('https://as.com/meristation/imagenes/2021/07/02/reportajes/1625238771_202608_1625238808_noticia_normal.jpg');
+  background-repeat: repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.filtro{
+  margin-top: 300px;
+  width: 20%;
+  height: 500px;
+  background-color: lightslategray;
+  
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  margin-left: 25px;
+}
+
+
+.filtro-logo {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+
+.filtro h1{
+  letter-spacing: 2px;
+  color: white;
+  
+  
+
+}
+
+.filtro-botones{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  flex-direction: column;
+  border-bottom: 1px solid black;
+}
+
+.filtro-botones button{
+  width: 50%;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.filtro-botones2{
+  width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.filtro-botones2 button{
+  padding: 5px 25px;
+  cursor: pointer;
+}
+
+.listado-de-peliculas{
+  width: 90%;
+}
+
+.conteiner-caja{
+  width: 100%;
+  height: auto;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.caja{
+  margin-top: 25px;
+  margin-left: 25px;
+  width: 250px;
+  height: 300px;
+  cursor: pointer;
+  border: 1px solid white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+ border-radius: 5px;
+}
+
+.año-pelicula{
+  
+  border-radius:5px ;
+  position: absolute;
+  top: 1%;
+  right: 45%;
+  width: 50%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.año-pelicula h6{
+  color: white;
+}
+
+
+.titulo-pelicula{
+  display: none;
+  position: absolute;
+  top: 85%;
+  transform: translateY(100px);
+  width: 100%;
+  height: 15%;
+  background-color: black;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3 ease-in-out;
+  cursor: pointer;
+}
+
+.titulo-pelicula button{
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: black;
+  color: red;
+  border: 1px solid white;
+  border-radius: 5px;
+  
+}
+
+
+
+.caja img{
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease-in-out;
+}
+
+.caja:hover img{
+  transform: scale(1.25);
+  
+}
+
+.caja:hover .titulo-pelicula {
+  transform: translateY(0)
+}
+
+
+
+.botones{
+  margin-top: 45px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;  
+  margin-bottom: 25px;
+}
+
+.botones button{
+  padding: 10px 25px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  transition: 0.3s;
+}
+
+.botones button:hover{
+  background-color: white;
+  color: black;
+  
+}
+
+.botones h2{
+  color: white;
+}
+
+.titulo2{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.pagina{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  ;
+  margin-top: -45px;
+}
+
+.pagina h4{
+  font-size: 25px;
+  margin-right: 55px;
+  color:white;
+}
+
+.titulo2 h1{
+  color: white;
+  
+}
+
+.infopelicula{
+  position: absolute;
+  top: 25%;
+  right: 4%;
+  display: none;
+  
+  z-index: 1000;
+  width: 70%;
+  
+  height: auto;
+  border-radius: 10px;
+  
+}
+
+.container-info{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 10px;
+  
+}
+
+.imagen-principal{
+  width:100%;
+  height: 100%;
+  
+
+}
+.imagen-principal img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.content{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.boton-cerrar{
+  width: 99%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+.boton-cerrar button{
+  padding: 5px 5px;
+  background-color: transparent;
+  border: 1px solid red;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.boton-cerrar button:hover{
+  background-color: white;
+  color: red;
+}
+
+.container-principal{
+  margin-top: 150px;
+  width: 100%;
+  height: 150%;
+  display: flex;
+  gap: 145px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.img-principal{
+  width: 20%;
+  height: 30%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.img-principal img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.img-principal img:hover{
+  transform: scale(1.25);
+}
+
+.contenido{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  
+
+}
+
+.contenido h1{
+  font-size: 50px;
+  color: white;
+}
+
+.contenido p {
+  color: white;
+  font-size: 30px;
+  height: 250px;
+  overflow: auto;
+}
+
+.puntuacion{
+  margin-top: 25px;
+  height: 25%;
+  width: 100%;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  gap: 15px;
+}
+
+
+.puntuacion h2 , h3{
+  
+  color: white;
+  
+}
+
+.añadir{
+  width: 100%;
+  height: 50px;
+  display:flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.añadir button{
+  background-color: green;
+  color: white;
+  padding: 10px 15px;
+  border: green;
+  cursor: pointer;
+  transition: 0.3s;
+  
+}
+
+.añadir button:hover{
+  padding: 10px 35px;
+}
+
+.conteiner_lista{
+  width: 100%;
+  height: 90vh;
+  background-image: url('https://as.com/meristation/imagenes/2021/07/02/reportajes/1625238771_202608_1625238808_noticia_normal.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.caja-lista{
+  margin-left: 25px;
+  margin-top: 45px;
+  width: 300px;
+  height: 300px;
+  background-color:black;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.imagen-lista{
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.imagen-lista img{
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.imagen-lista img:hover{
+  transform: scale(1.25);
+}
+
+.boton-quitar{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+}
+
+.boton-quitar button{
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: 0.3s ease-in-out;
+  border: none;
+  border-radius: 5px;
+}
+
+.boton-quitar button:hover{
+  background-color: red;
+  color: white;
+}
+
+@media (max-width:1280px){
+  .contenido p{
+    height: 150px;
+  }
+  .contenido{
+    margin-top: -100px;
+  }
+
+  .añadir{
+    margin-top: -15px;
+  }
+}
